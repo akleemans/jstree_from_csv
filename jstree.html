@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fruits</title>
+  <link rel="stylesheet" href="lib/style.min.css" />
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/jstree.min.js"></script>
+</head>
+<body>
+<p>Some fruits</p>
+<div id="fruits"></div>
+
+<script>
+  $(function () {
+    $('#fruits').jstree({ 'core' : {
+        "data" : [
+        { "id" : "früchte", "parent" : "#", "text" : "Früchte" },
+        { "id" : "kernobst", "parent" : "früchte", "text" : "Kernobst" },
+        { "id" : "steinobst", "parent" : "früchte", "text" : "Steinobst" },
+        { "id" : "beerenobst", "parent" : "früchte", "text" : "Beerenobst" },
+        { "id" : "südfrüchte", "parent" : "früchte", "text" : "Südfrüchte" },
+        { "id" : "birne", "parent" : "kernobst", "text" : "Birne" },
+        { "id" : "kirsche", "parent" : "steinobst", "text" : "Kirsche" },
+        { "id" : "pflaumen", "parent" : "steinobst", "text" : "Pflaumen" },
+        { "id" : "sammelsteinfrüchte", "parent" : "beerenobst", "text" : "Sammelsteinfrüchte" },
+        { "id" : "sammelnussfrüchte", "parent" : "beerenobst", "text" : "Sammelnussfrüchte" },
+        { "id" : "zitrusfrüchte", "parent" : "südfrüchte", "text" : "Zitrusfrüchte" },
+        { "id" : "birneeuropäischebirne", "parent" : "birne", "text" : "Europäische Birne" , "icon": false},
+        { "id" : "birnenashi-birne", "parent" : "birne", "text" : "Nashi-Birne" , "icon": false},
+        { "id" : "kirschesüsskirsche", "parent" : "kirsche", "text" : "Süsskirsche" , "icon": false},
+        { "id" : "kirschesauerkirsche", "parent" : "kirsche", "text" : "Sauerkirsche" , "icon": false},
+        { "id" : "pflaumenechtepflaume", "parent" : "pflaumen", "text" : "Echte Pflaume" , "icon": false},
+        { "id" : "pflaumenmirabelle", "parent" : "pflaumen", "text" : "Mirabelle" , "icon": false},
+        { "id" : "pflaumenedel-pflaume", "parent" : "pflaumen", "text" : "Edel-Pflaume" , "icon": false},
+        { "id" : "pflaumenzwetschge", "parent" : "pflaumen", "text" : "Zwetschge" , "icon": false},
+        { "id" : "sammelsteinfrüchtebrombeere", "parent" : "sammelsteinfrüchte", "text" : "Brombeere" , "icon": false},
+        { "id" : "sammelsteinfrüchtehimbeere", "parent" : "sammelsteinfrüchte", "text" : "Himbeere" , "icon": false},
+        { "id" : "sammelsteinfrüchtelachsbeere", "parent" : "sammelsteinfrüchte", "text" : "Lachsbeere" , "icon": false},
+        { "id" : "sammelnussfrüchteerdbeere", "parent" : "sammelnussfrüchte", "text" : "Erdbeere" , "icon": false},
+        { "id" : "sammelnussfrüchtehagebutte", "parent" : "sammelnussfrüchte", "text" : "Hagebutte" , "icon": false},
+        { "id" : "zitrusfrüchtelimette", "parent" : "zitrusfrüchte", "text" : "Limette" , "icon": false},
+        { "id" : "zitrusfrüchtemandarine", "parent" : "zitrusfrüchte", "text" : "Mandarine" , "icon": false},
+        { "id" : "zitrusfrüchteorange", "parent" : "zitrusfrüchte", "text" : "Orange" , "icon": false},
+        { "id" : "zitrusfrüchtegrapefruit", "parent" : "zitrusfrüchte", "text" : "Grapefruit" , "icon": false},
+        { "id" : "zitrusfrüchtechinotto", "parent" : "zitrusfrüchte", "text" : "Chinotto" , "icon": false},
+        { "id" : "zitrusfrüchtezitrone", "parent" : "zitrusfrüchte", "text" : "Zitrone" , "icon": false},
+        ]
+    } });
+  });
+  </script>
+</body>
+</html>
